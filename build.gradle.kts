@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     kotlin("jvm") version "1.4.30"
-    id("org.jetbrains.compose") version "0.3.0-rc1"
+    id("org.jetbrains.compose") version "0.4.0-build168"
 }
 
 group = "com.theapache64"
@@ -18,6 +18,9 @@ repositories {
 
 dependencies {
     implementation(compose.desktop.currentOs)
+
+    implementation("org.jetbrains.skiko:skiko-jvm-runtime-linux-x64:0.2.16")
+    implementation("org.jetbrains.skiko:skiko-jvm:0.2.16")
 }
 
 tasks.withType<KotlinCompile>() {
