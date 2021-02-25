@@ -21,6 +21,9 @@ dependencies {
 
     implementation("org.jetbrains.skiko:skiko-jvm-runtime-linux-x64:0.2.16")
     implementation("org.jetbrains.skiko:skiko-jvm:0.2.16")
+
+    // OkHttp : For networking
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
 }
 
 tasks.withType<KotlinCompile>() {
